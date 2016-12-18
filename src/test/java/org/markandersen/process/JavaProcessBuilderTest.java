@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+import org.junit.Ignore;
 import org.markandersen.process.JavaProcessBuilder;
 import org.markandersen.process.ProcessManager;
 import org.markandersen.process.ProcessTestMain;
@@ -87,6 +88,7 @@ public class JavaProcessBuilderTest extends BaseTestCase {
 	 * 
 	 * @throws IOException
 	 */
+	@Ignore
 	public void testCreateJavaProcessExecutableJar() throws IOException {
 		JavaProcessBuilder javaProcess = new JavaProcessBuilder();
 		String javaHome = System.getenv("JAVA_HOME");

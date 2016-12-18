@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.Properties;
 
+import org.junit.Ignore;
 import org.markandersen.io.IOUtils;
 import org.markandersen.io.file.FileInterface;
 
@@ -93,6 +94,7 @@ public class ReloadableProperties2 {
 	 * @param scanInterval
 	 * @return
 	 */
+	@Ignore
 	public static ReloadableProperties2 getClasspathInstance(String resource,
 			int scanInterval) {
 
