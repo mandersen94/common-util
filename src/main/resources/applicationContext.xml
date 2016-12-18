@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="true">
+
+	<bean id="serverSocketFactory"
+		class="com.andersen.net.ServerSocketFactory">
+		<property name="port">
+			<value>3232</value>
+		</property>
+	</bean>
+
+
+	<bean id="serverSocket" factory-bean="serverSocketFactory"
+		factory-method="create">
+	</bean>
+</beans>
