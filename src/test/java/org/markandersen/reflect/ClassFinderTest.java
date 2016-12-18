@@ -21,9 +21,9 @@ public class ClassFinderTest extends BaseTestCase {
 
 	String eclipseBaseTestPath2 = "./bin";
 
-	String gradleMainClassPath = "./build/classes/main"
+	String gradleMainClassPath = "./build/classes/main";
 
-	String gradleTestClassPath = "./build/classes/test"
+	String gradleTestClassPath = "./build/classes/test";
 
 	String antBaseTestPath = "./build/test/classes";
 
@@ -39,7 +39,7 @@ public class ClassFinderTest extends BaseTestCase {
 		paths.add(eclipseBaseTestPath);
 		paths.add(eclipseBaseTestPath2);
 		paths.add(gradleMainClassPath);
-		paths.add(gradleMainTestPath);
+		paths.add(gradleTestClassPath);
 		paths.add(antBaseTestPath);
 		paths.add(mavenBaseTestPath);
 		superClasses = new Class[] { TestCase.class };
