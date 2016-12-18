@@ -119,7 +119,7 @@ public class ReloadableProperties2 {
 
 		if (!file.exists()) {
 			// bad.
-			throw new NullPointerException("file doesn't exist. file = " + file);
+			throw new NullPointerException("file doesn't exist. file = " + file.getName());
 		} else {
 			return new ReloadableProperties2(file, scanInterval);
 		}
