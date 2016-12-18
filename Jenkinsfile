@@ -8,8 +8,8 @@ node {
     }
 
     stage('Unit Test') {
-        sh 'mvn test'
-        junit 'reports/**/*.xml' // <4>
+        'mvn test'
+        //junit 'reports/**/*.xml' 
     }
 
     stage ('Open Source Scan') {
