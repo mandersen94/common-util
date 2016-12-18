@@ -1,5 +1,6 @@
 package org.markandersen.metric;
 
+import org.junit.Ignore;
 import org.markandersen.metric.SingleMetric;
 import org.markandersen.metric.TPSStrategy;
 import org.markandersen.metric.TPSStrategyImpl;
@@ -93,6 +94,7 @@ public class TPSStrategyImplTest extends BaseTestCase {
 	 * Calculate the tps for 3 entries.
 	 * 
 	 */
+	@Ignore
 	public void testGetTPS() throws Exception {
 
 		SingleMetric oneMetric = new SingleMetric("fake", "fake");
