@@ -1,20 +1,21 @@
 node {
 
      def mvnHome
+     def gradleHome
 
     stage('Prepare') {
-      
+
       git 'https://github.com/mandersen94/common-util.git'
       mvnHome = tool 'M3'
+      gradleHome = tool 'GRADLE'
     }
 
     stage('Build') {
-        //'mvn clean compile'
-        // Run the maven build
+
         if (isUnix()) {
-            sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+            sh "'${gradleHome}/bin/gradle' clean compileJava"
         } else {
-            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+//            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
     }
 
