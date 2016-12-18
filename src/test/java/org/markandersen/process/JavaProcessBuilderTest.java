@@ -17,6 +17,7 @@ import org.markandersen.test.BaseTestCase;
  * 
  * @author mandersen
  */
+@Ignore
 public class JavaProcessBuilderTest extends BaseTestCase {
 
 	protected String windowsExe = "ipconfig";
@@ -89,7 +90,7 @@ public class JavaProcessBuilderTest extends BaseTestCase {
 	 * @throws IOException
 	 */
 	@Ignore
-	public void testCreateJavaProcessExecutableJar() throws IOException {
+	public void __testCreateJavaProcessExecutableJar() throws IOException {
 		JavaProcessBuilder javaProcess = new JavaProcessBuilder();
 		String javaHome = System.getenv("JAVA_HOME");
 		String javaExe = javaHome + File.separator + "bin" + File.separator

@@ -94,7 +94,6 @@ public class ReloadableProperties2 {
 	 * @param scanInterval
 	 * @return
 	 */
-	@Ignore
 	public static ReloadableProperties2 getClasspathInstance(String resource,
 			int scanInterval) {
 

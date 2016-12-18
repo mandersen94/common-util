@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.StringReader;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.markandersen.io.file.FileInterface;
 import org.markandersen.test.BaseTestCase;
 
@@ -28,7 +29,8 @@ public class ReloadablePropertiesTest extends BaseTestCase {
 	/**
 	 * 
 	 */
-	public void testGetInstance() {
+	@Ignore
+	public void __testGetInstance() {
 
 		ReloadableProperties2 instance = ReloadableProperties2
 				.getClasspathInstance(resourceName, 5 * 1000);
