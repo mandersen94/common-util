@@ -28,6 +28,7 @@ node {
 
     stage ('Open Source Scan') {
       //look for bad open source libraries
+      input message: "Does http://localhost:8888/staging/ look good?"
     }
 
     stage ('Static Code Scan') {
