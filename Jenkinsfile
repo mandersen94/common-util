@@ -20,7 +20,10 @@ node {
     }
 
     stage('Unit Test') {
-        'mvn test'
+
+        sh "'${gradleHome}/bin/gradle' clean test"
+
+        //'mvn test'
         //junit 'reports/**/*.xml'
     }
 
