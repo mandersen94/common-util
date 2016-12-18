@@ -20,7 +20,9 @@ public class JavaProcessBuilderTest extends BaseTestCase {
 
 	protected String windowsExe = "ipconfig";
 
-	protected String unixExe = "/sbin/ifconfig";
+	//protected String unixExe = "/sbin/ifconfig";
+	
+	protected String unixExe = "/bin/ls";
 
 	protected String exe;
 
