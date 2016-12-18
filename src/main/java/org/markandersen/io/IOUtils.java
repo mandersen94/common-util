@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class IOUtils {
 
-	public static void closeQuietly(InputStream inputStream) {
+	publicssss static void closeQuietly(InputStream inputStream) {
 		if (inputStream == null) {
 			return;
 		}
