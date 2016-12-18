@@ -3,7 +3,7 @@ node {
      def mvnHome
 
     stage('Prepare') {
-      //'git clone https://github.com/mandersen94/common-util.git'
+      
       git 'https://github.com/mandersen94/common-util.git'
       mvnHome = tool 'M3'
     }
