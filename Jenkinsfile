@@ -23,7 +23,7 @@ node {
 
         sh "'${gradleHome}/bin/gradle' test"
 
-        junit 'reports/**/*.xml'
+        junit 'build/reports/**/*.xml'
     }
 
     stage ('Open Source Scan') {
