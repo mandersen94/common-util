@@ -21,12 +21,16 @@ public class ClassFinderTest extends BaseTestCase {
 
 	String eclipseBaseTestPath2 = "./bin";
 
+	String gradleMainClassPath = "./build/classes/main"
+
+	String gradleTestClassPath = "./build/classes/test"
+
 	String antBaseTestPath = "./build/test/classes";
-	
+
 	String mavenBaseTestPath = "./target/test-classes";
 
 	/**
-	 * 
+	 *
 	 */
 	@Override
 	protected void setUp() throws Exception {
@@ -34,13 +38,15 @@ public class ClassFinderTest extends BaseTestCase {
 
 		paths.add(eclipseBaseTestPath);
 		paths.add(eclipseBaseTestPath2);
+		paths.add(gradleMainClassPath);
+		paths.add(gradleMainTestPath);
 		paths.add(antBaseTestPath);
 		paths.add(mavenBaseTestPath);
 		superClasses = new Class[] { TestCase.class };
 	}
 
 	/**
-	 * 
+	 *
 	 * @throws IOException
 	 * @throws ClassNotFoundException
 	 */
@@ -56,7 +62,7 @@ public class ClassFinderTest extends BaseTestCase {
 	}
 
 	/**
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void testFindClassesNoResults() throws Exception {
